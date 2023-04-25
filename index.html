@@ -19,138 +19,180 @@ body {font-family: "Lato", sans-serif}
   <div class="w3-bar w3-black w3-card">
     <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
     <a href="#" class="w3-bar-item w3-button w3-padding-large">HOME</a>
-    <a href="#band" class="w3-bar-item w3-button w3-padding-large w3-hide-small">BAND</a>
-    <a href="#tour" class="w3-bar-item w3-button w3-padding-large w3-hide-small">TOUR</a>
-    <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hide-small">CONTACT</a>
-    <div class="w3-dropdown-hover w3-hide-small">
-      <button class="w3-padding-large w3-button" title="More">MORE <i class="fa fa-caret-down"></i></button>     
-      <div class="w3-dropdown-content w3-bar-block w3-card-4">
-        <a href="#" class="w3-bar-item w3-button">Merchandise</a>
-        <a href="#" class="w3-bar-item w3-button">Extras</a>
-        <a href="#" class="w3-bar-item w3-button">Media</a>
-      </div>
-    </div>
+    <a href="#OVERVIEW" class="w3-bar-item w3-button w3-padding-large w3-hide-small">OVERVIEW</a>
+    <a href="#DATASET" class="w3-bar-item w3-button w3-padding-large w3-hide-small">DATASET</a>
+    <a href="#MODEL" class="w3-bar-item w3-button w3-padding-large w3-hide-small">MODEL</a>
+    <a href="#RESULT" class="w3-bar-item w3-button w3-padding-large w3-hide-small">RESULT</a>
+    <a href="#DOCUMENTS" class="w3-bar-item w3-button w3-padding-large w3-hide-small">DOCUMENTS</a>
+    <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Contact</a>
     <a href="javascript:void(0)" class="w3-padding-large w3-hover-red w3-hide-small w3-right"><i class="fa fa-search"></i></a>
   </div>
 </div>
 
 <!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
 <div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
-  <a href="#band" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">BAND</a>
-  <a href="#tour" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">TOUR</a>
-  <a href="#contact" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">CONTACT</a>
-  <a href="#" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">MERCH</a>
+  <a href="#OVERVIEW" class="w3-bar-item w3-button w3-padding-large w3-hide-small">OVERVIEW</a>
+  <a href="#DATASET" class="w3-bar-item w3-button w3-padding-large w3-hide-small">DATASET</a>
+  <a href="#MODEL" class="w3-bar-item w3-button w3-padding-large w3-hide-small">MODEL</a>
+  <a href="#RESULT" class="w3-bar-item w3-button w3-padding-large w3-hide-small">RESULT</a>
+  <a href="#DOCUMENTS" class="w3-bar-item w3-button w3-padding-large w3-hide-small">DOCUMENTS</a>
+  <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Contact</a>
 </div>
 
 <!-- Page content -->
 <div class="w3-content" style="max-width:2000px;margin-top:46px">
 
   <!-- Automatic Slideshow Images -->
-  <div class="mySlides w3-display-container w3-center">
-    <img src="/w3images/la.jpg" style="width:100%">
-    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
-      <h3>Los Angeles</h3>
-      <p><b>We had the best time playing at Venice Beach!</b></p>   
+  <div  class="mySlides w3-display-container w3-center">
+    <img src="img/auto-driving.jpg" style="width:50%">
+    <div class="w3-display-bottommiddle w3-container w3-text-pink w3-padding-32 w3-hide-small">
+      <!--h3 color= "black">OPENSET OBJECT DETECTION</h3-->
     </div>
   </div>
   <div class="mySlides w3-display-container w3-center">
-    <img src="/w3images/ny.jpg" style="width:100%">
+    <img src="img/tiger.jpeg" style="width:50%">
     <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
-      <h3>New York</h3>
-      <p><b>The atmosphere in New York is lorem ipsum.</b></p>    
+      <h3>Autonomous driving</h3>
     </div>
   </div>
-  <div class="mySlides w3-display-container w3-center">
-    <img src="/w3images/chicago.jpg" style="width:100%">
-    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
-      <h3>Chicago</h3>
-      <p><b>Thank you, Chicago - A night we won't forget.</b></p>    
-    </div>
   </div>
 
-  <!-- The Band Section -->
-  <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="band">
-    <h2 class="w3-wide">THE BAND</h2>
-    <p class="w3-opacity"><i>We love music</i></p>
-    <p class="w3-justify">We have created a fictional band website. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-      ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur
-      adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+  <!-- The OVERVIEW Section -->
+  <div class="w3-container w3-content w3-padding-64" style="max-width:1100px" id="OVERVIEW">
+    <h2 class="w3-wide w3-center">OpenSet Object Detection </h2>
+    <p class="w3-opacity w3-center"><i>Introduction</i></p>
+    <p class="w3-justify">In the age of data science and AI, robotics and autonomous vehicles are extremely hot in both research and application. We can easily see that any car brand has installed their autonomous driving system into their car. And this the future of the world. But all state-of-the-art (SOTA) models for Object Detection were trained with very big dataset with limited class label, so what will happen when the model see something not from their dataset, will it capture that “thing”? For example, if the radar of autonomous vehicle sees an elephant on the street, what will happen? That is why we call this project “Open-Set Object Detection”.</p>
     <div class="w3-row w3-padding-32">
       <div class="w3-third">
-        <p>Name</p>
-        <img src="/w3images/bandmember.jpg" class="w3-round w3-margin-bottom" alt="Random Name" style="width:60%">
+        <p>Supervisor</p>
+        <p>Professor Liam Paull</p>
+        <p>Contact: liam.paull@umontreal.ca</p>
       </div>
       <div class="w3-third">
-        <p>Name</p>
-        <img src="/w3images/bandmember.jpg" class="w3-round w3-margin-bottom" alt="Random Name" style="width:60%">
+        <p><b>Objectives</b></p>
+        <ul>
+          <li>Being able to load and preprocess image for autonomous driving dataset.</li>
+          <li>Understand concept of SOTA model for Object Detection</li>
+          <li>Create a pipeline to detect objects not from dataset (based on context of autonomous driving) </li>
+        </ul>
       </div>
       <div class="w3-third">
-        <p>Name</p>
-        <img src="/w3images/bandmember.jpg" class="w3-round" alt="Random Name" style="width:60%">
+        <p>Milestones</p>
+        <ul>
+          <li>Search and understand basic knowledges of Computer Vision (CV).</li>
+          <li>Review research articles about state-of-the-art (SOTA) algorithm for Object Detection (OD).</li>
+          <li>Find and ingest dataset of object detection for autonomous driving.</li>
+          <li>Create a pipeline to detect out-of-distribution object.</li>
+          <li>Evaluate the accuracy of the detection, show embeddings plot.</li>
+          <li>Extension to continuous learning of OD</li>
+        </ul>
       </div>
     </div>
   </div>
 
-  <!-- The Tour Section -->
-  <div class="w3-black" id="tour">
-    <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
-      <h2 class="w3-wide w3-center">TOUR DATES</h2>
-      <p class="w3-opacity w3-center"><i>Remember to book your tickets!</i></p><br>
-
-      <ul class="w3-ul w3-border w3-white w3-text-grey">
-        <li class="w3-padding">September <span class="w3-tag w3-red w3-margin-left">Sold out</span></li>
-        <li class="w3-padding">October <span class="w3-tag w3-red w3-margin-left">Sold out</span></li>
-        <li class="w3-padding">November <span class="w3-badge w3-right w3-margin-right">3</span></li>
-      </ul>
-
-      <div class="w3-row-padding w3-padding-32" style="margin:0 -16px">
-        <div class="w3-third w3-margin-bottom">
-          <img src="/w3images/newyork.jpg" alt="New York" style="width:100%" class="w3-hover-opacity">
-          <div class="w3-container w3-white">
-            <p><b>New York</b></p>
-            <p class="w3-opacity">Fri 27 Nov 2016</p>
-            <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-            <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'">Buy Tickets</button>
-          </div>
+  <!-- The DATASET Section -->
+  <div class="w3-black" id="DATASET">
+    <div class="w3-container w3-content w3-padding-64 " style="max-width:800px">
+      <h2 class="w3-wide w3-center">DATASET</h2>
+      <p class="w3-opacity w3-center"><i>Lost and Found dataset</i></p><br>
+      <div class="w3-row">
+        <div class="w3-seconds w3-center">
+          <p>Details</p>
+          <p>Description:  Image with small obstacles on the road (often caused by lost cargo)</p>
+          <p>Size: Train Set - 1036 image / Test Set – 1203 image, with image size = (1024,2048,3)</p>
+          <p>Details: Dataset give raw image and segmented image</p>
+          <img src="img/dataset.png" style="width:90%">
         </div>
-        <div class="w3-third w3-margin-bottom">
-          <img src="/w3images/paris.jpg" alt="Paris" style="width:100%" class="w3-hover-opacity">
-          <div class="w3-container w3-white">
-            <p><b>Paris</b></p>
-            <p class="w3-opacity">Sat 28 Nov 2016</p>
-            <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-            <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'">Buy Tickets</button>
-          </div>
-        </div>
-        <div class="w3-third w3-margin-bottom">
-          <img src="/w3images/sanfran.jpg" alt="San Francisco" style="width:100%" class="w3-hover-opacity">
-          <div class="w3-container w3-white">
-            <p><b>San Francisco</b></p>
-            <p class="w3-opacity">Sun 29 Nov 2016</p>
-            <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-            <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'">Buy Tickets</button>
-          </div>
+      </div>
+      <div class="w3-row">
+        <div class="w3-seconds w3-center">
+          <p>Data preprocessing</p>
+          <p>Since the image has shape of (1024,2048, 3), then we split it to patches with size of 64x64</p>
+          <img src="img/before.png" style="width:70%">
+          <img src="img/after.png" style="width:70%">
         </div>
       </div>
     </div>
   </div>
 
-  <!-- Ticket Modal -->
-  <div id="ticketModal" class="w3-modal">
-    <div class="w3-modal-content w3-animate-top w3-card-4">
-      <header class="w3-container w3-teal w3-center w3-padding-32"> 
-        <span onclick="document.getElementById('ticketModal').style.display='none'" 
-       class="w3-button w3-teal w3-xlarge w3-display-topright">×</span>
-        <h2 class="w3-wide"><i class="fa fa-suitcase w3-margin-right"></i>Tickets</h2>
-      </header>
-      <div class="w3-container">
-        <p><label><i class="fa fa-shopping-cart"></i> Tickets, $15 per person</label></p>
-        <input class="w3-input w3-border" type="text" placeholder="How many?">
-        <p><label><i class="fa fa-user"></i> Send To</label></p>
-        <input class="w3-input w3-border" type="text" placeholder="Enter email">
-        <button class="w3-button w3-block w3-teal w3-padding-16 w3-section w3-right">PAY <i class="fa fa-check"></i></button>
-        <button class="w3-button w3-red w3-section" onclick="document.getElementById('ticketModal').style.display='none'">Close <i class="fa fa-remove"></i></button>
-        <p class="w3-right">Need <a href="#" class="w3-text-blue">help?</a></p>
+  <!-- The MODEL Section -->
+  <div class="w3-container w3-content w3-padding-64" style="max-width:1100px" id="MODEL">
+    <h2 class="w3-wide w3-center"> MODEL </h2>
+    <p class="w3-opacity w3-center"><i>Requirement</i></p>
+    <div class="w3-row w3-padding-32">
+      <div class="w3-third">
+        <p>Computer resource</p>
+        <ul>
+          <li>16gb-40gb RAM</li>
+          <li>16gb CPU</li>
+        </ul>
+      </div>
+      <div class="w3-third">
+        <p><b>Parameters</b></p>
+        <ul>
+          <li>Text_prompt = [“Image of a car”, “Image of object”]. For this parameter, we can have text description based on the context to detect unknown objects in which context that we want.</li>
+          <li>Patches = 64</li>
+          <li>Window = 2</li>
+          <li>Stride = 2</li>
+          <li>Threshold = 0.7</li>
+        </ul>
+      </div>
+      <div class="w3-third">
+        <p>Librairies</p>
+        <ul>
+          <li>Tensorflow_datasets</li>
+          <li>Torch</li>
+          <li>Transformers</li>
+          <li>Sklearn</li>
+          <li>matplotlib</li>
+          <li>Numpy</li>
+        </ul>
+      </div>
+      <div class="w3-seconds w3-center">
+        <p>Schema</p>
+        <p>We are using CLIP multi-modal for our pipeline</p>
+        <img src="img/model.jpg" style="width:70%">
+      </div>
+    </div>
+  </div>
+
+  <!-- The RESULT Section -->
+  <div class="w3-black" id="RESULT">
+    <div class="w3-container w3-content w3-padding-64 " style="max-width:800px">
+      <h2 class="w3-wide w3-center">RESULT</h2>
+      <p class="w3-opacity w3-center"><i>OUTPUT and DETECTION</i></p><br>
+      <div class="w3-row w3-center">
+        <img src="img/output_car.png" style="width:80%">
+        <img src="img/output_object.png" style="width:80%">
+      </div>
+      <div class="w3-row">
+        <div class="w3-seconds w3-center">
+          <p>OBJECT DETECTION</p>
+          <img src="img/full_output.png" style="width:100%">
+        </div>
+      </div>
+      <div class="w3-row">
+        <div class="w3-seconds w3-center">
+          <p>Embeddings plot with PCA</p>
+          <img src="img/PCA.png" style="width:100%">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- The DOCS Section -->
+  <div class="w3-container w3-content w3-padding-64" style="max-width:1100px" id="DOCUMENTS">
+    <h2 class="w3-wide w3-center"> DOCUMENTS </h2>
+    <p class="w3-opacity w3-center"><i>Requirement</i></p>
+    <div class="w3-row w3-padding-32 w3-center">
+      <div class="w3-third">
+        <a href="PROJECT_PLAN.pdf">PROJECT PLAN</a>
+      </div>
+      <div class="w3-third">
+        <a href="PROJECT_PLAN.pdf">FINAL REPORT</a>
+      </div>
+      <div class="w3-third">
+        <a href="Literature_review.pdf">LITERATURE REVIEW</a>
       </div>
     </div>
   </div>
@@ -158,12 +200,11 @@ body {font-family: "Lato", sans-serif}
   <!-- The Contact Section -->
   <div class="w3-container w3-content w3-padding-64" style="max-width:800px" id="contact">
     <h2 class="w3-wide w3-center">CONTACT</h2>
-    <p class="w3-opacity w3-center"><i>Fan? Drop a note!</i></p>
+    <p class="w3-opacity w3-center"><i>Questions? Drop me a note!</i></p>
     <div class="w3-row w3-padding-32">
       <div class="w3-col m6 w3-large w3-margin-bottom">
-        <i class="fa fa-map-marker" style="width:30px"></i> Chicago, US<br>
-        <i class="fa fa-phone" style="width:30px"></i> Phone: +00 151515<br>
-        <i class="fa fa-envelope" style="width:30px"> </i> Email: mail@mail.com<br>
+        <i class="fa fa-map-marker" style="width:30px"></i> Montrea, Canada<br>
+        <i class="fa fa-envelope" style="width:30px"> </i> Email: vvnam97@mail.com<br>
       </div>
       <div class="w3-col m6">
         <form action="/action_page.php" target="_blank">
@@ -181,12 +222,9 @@ body {font-family: "Lato", sans-serif}
       </div>
     </div>
   </div>
-  
+
 <!-- End Page Content -->
 </div>
-
-<!-- Image of location/map -->
-<img src="/w3images/map.jpg" class="w3-image w3-greyscale-min" style="width:100%">
 
 <!-- Footer -->
 <footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge">
@@ -208,12 +246,12 @@ function carousel() {
   var i;
   var x = document.getElementsByClassName("mySlides");
   for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";  
+    x[i].style.display = "none";
   }
   myIndex++;
-  if (myIndex > x.length) {myIndex = 1}    
-  x[myIndex-1].style.display = "block";  
-  setTimeout(carousel, 4000);    
+  if (myIndex > x.length) {myIndex = 1}
+  x[myIndex-1].style.display = "block";
+  setTimeout(carousel, 4000);
 }
 
 // Used to toggle the menu on small screens when clicking on the menu button
@@ -221,7 +259,7 @@ function myFunction() {
   var x = document.getElementById("navDemo");
   if (x.className.indexOf("w3-show") == -1) {
     x.className += " w3-show";
-  } else { 
+  } else {
     x.className = x.className.replace(" w3-show", "");
   }
 }
